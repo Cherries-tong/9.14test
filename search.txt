@@ -1,0 +1,89 @@
+有两支不均匀的香，每支可燃烧一小时，如果我们的考试时间需要45分钟，请问应该如何燃香，用这两支香一共可以记录多少种时间？ 分别是多长
+
+轮播图
+
+匀速运动
+
+
+商业合作
+开发接入
+文档中心
+蚂蚁开放学院
+服务市场
+
+收钱码合作
+支付系统合同
+银行收单服务
+海外支接入
+
+{重要}蚂蚁金服网站服务器证书升级公告
+
+关于未经授权开展“支付宝应用全国研讨会”的情况说明
+
+SFTP服务调用方式升级提醒
+「04－16」
+
+#394662
+
+
+$('.yr').each(function (i,ele){
+        $(ele).attr('data-index',i);
+    });
+    
+    $('.yr').mouseenter(function(){
+        var index = $(this).attr('data-index');
+        $('.xia').eq(index).stop().slideDown(400);
+        setTimeout(function () {
+            $(".sanjiao").eq(index).animate({},function(){                                       
+
+                $(".sanjiao").eq(index).css({'transform':'rotate(180deg)',
+                'transition': 'transform'+ '.'+'3s'
+            });                                   
+                
+                })
+        },200)
+    })
+    $('.yr').mouseleave(function(){
+        var index = $(this).attr('data-index'); 
+        $('.xia').eq(index).stop().slideUp(400);
+        setTimeout(function() {
+            $(".sanjiao").eq(index).animate({},function(){                                       
+
+                $(".sanjiao").eq(index).css({'transform':'rotate(360deg)',
+                'transition': 'transform'+ '.'+'3s'
+            });                                   
+                
+                })  
+        },200)
+    })
+
+
+
+
+请求头，响应头
+判断如何查找请求头还是响应头
+session destroy 用法
+xmlhttprequest？
+cookie和session原理？
+
+cookie
+当浏览器访问一个带cookie的页面时，cookie会随着响应头返回给浏览器。
+当再次访问该网站的页面时，cookie会随着请求头一起发送给服务器。
+
+session
+当浏览器访问一个设置session的页面时，服务器会随机自动生成一个session_id（字符串）。通过响应头的set-cookie返回给浏览器，并保存在浏览器的cookie当中，同时服务器中也会生成一个以session_id为名称的文件，用来记录信息。
+浏览器之后每次访问该网站时，都会携带cookie和session_id，来和服务器中的session文件名进行比对。当文件名和cookie中的session_id一致时，则说明使用的是该session文件，可以从该session文件中读取数据。
+
+json_encode()转json字符串
+JSON.parse()转json对象
+
+
+其他配置
+
+
+自定义属性id---data-id
+
+
+
+
+
